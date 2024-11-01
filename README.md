@@ -1,2 +1,2 @@
 # testFFT_kernel
-project test fft kernel 
+Because our project requires the use of one-dimensional FFT, and we have already utilized the cufft.h library, but our data is logically two-dimensional. Therefore, we are using for loops to continuously compute the FFT. I want to find a way to solve this problem, and I found a lot of similar information online. In my simulation through MATLAB, I discovered that the calculated values are correct. Ultimately, the solution I found was to use batch processing with cufftPlanMany.
